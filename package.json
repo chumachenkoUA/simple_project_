@@ -1,6 +1,6 @@
 {
   "name": "simple_project_",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "description": "A simple educational TypeScript project demonstrating package.json, dependencies, environment variables, and semantic versioning.",
   "main": "dist/index.cjs",

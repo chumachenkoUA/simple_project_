@@ -1,0 +1,55 @@
+{
+  "name": "simple_project_",
+  "version": "0.0.0",
+  "description": "A simple educational TypeScript project demonstrating package.json, dependencies, environment variables, and semantic versioning.",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "npm run test",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx src/demo.ts",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chumachenkoUA/simple_project_.git"
+  },
+  "keywords": [
+    "typescript",
+    "npm",
+    "package.json",
+    "semantic",
+    "versioning",
+    "env",
+    "eslint",
+    "prettier"
+  ],
+  "author": "chumachenkoUA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chumachenkoUA/simple_project_/issues"
+  },
+  "homepage": "https://github.com/chumachenkoUA/simple_project_#readme",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.5.2",
+    "commitlint": "^19.8.1",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1"
+  }
+}

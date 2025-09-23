@@ -20,9 +20,7 @@ const users: User[] = [
 
 console.log('group ok:', groupBy(users, 'name'));
 
-// правильні виклики
-
-const logger = new Logger(config.LOG_LEVEL as LogLevel); // значення з .env пройшло валідацію zod
+const logger = new Logger(config.LOG_LEVEL as LogLevel);
 
 logger.info('Application started');
 logger.debug('Extra debug info');

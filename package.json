@@ -3,7 +3,16 @@
   "version": "0.5.0",
   "type": "module",
   "description": "A simple educational TypeScript project demonstrating package.json, dependencies, environment variables, and semantic versioning.",
-  "main": "src/index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
   "scripts": {
     "test": "npm run test",
     "build": "tsup src/index.ts --format cjs,esm --dts",
@@ -46,6 +55,7 @@
     "commitlint": "^19.8.1",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.4.0",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
     "tsup": "^8.5.0",

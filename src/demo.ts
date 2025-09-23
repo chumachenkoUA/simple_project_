@@ -1,4 +1,13 @@
-import { add, capitalize, formatNumber, groupBy, type User } from './index.js';
+import {
+  add,
+  capitalize,
+  formatNumber,
+  groupBy,
+  type User,
+  Logger,
+  type LogLevel,
+} from './index.js';
+import { config } from './config.js';
 
 console.log('sum(typed):', add(2, 3));
 console.log('capitalize(typed):', capitalize('hello'));
@@ -10,3 +19,10 @@ const users: User[] = [
 ];
 
 console.log('group ok:', groupBy(users, 'name'));
+
+// правильні виклики
+
+const logger = new Logger(config.LOG_LEVEL as LogLevel); // значення з .env пройшло валідацію zod
+
+logger.info('Application started');
+logger.debug('Extra debug info');

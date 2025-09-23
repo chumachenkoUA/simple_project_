@@ -1,6 +1,6 @@
 {
   "name": "simple_project_",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "description": "A simple educational TypeScript project demonstrating package.json, dependencies, environment variables, and semantic versioning.",
   "main": "src/index.ts",
